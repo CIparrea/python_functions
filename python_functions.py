@@ -32,10 +32,24 @@
 # ____________________________________________________________________
 # breaking the parameters, the first argument is a name and then the rest will be considered as args
 
-def dev_skills(dev_name, *args):
-  dev = {'name': dev_name, 'skills': []}
-  for skill in args:
-    dev['skills'].append(skill)
-  return dev
+# def dev_skills(dev_name, *args):
+#   dev = {'name': dev_name, 'skills': []}
+#   for skill in args:
+#     dev['skills'].append(skill)
+#   return dev
 
-print(dev_skills('Alex', 'HTML', 'CSS', 'JavaScript', 'Python'))
+# print(dev_skills('Alex', 'HTML', 'CSS', 'JavaScript', 'Python'))
+
+
+
+
+# ____________________________________________________________________
+# same as the previous one, just that instead of mapping them we're just creating a list
+
+# def dev_skills(dev_name, *args):
+#   dev = {'name': dev_name, 'skills': list(args)}
+#   return dev
+
+# print(dev_skills('Alex', 'HTML', 'CSS', 'JavaScript', 'Python'))
+
+
