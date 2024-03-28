@@ -71,18 +71,18 @@
 # KWARGS deconstruction to get keyword and value (line 79)
 # item is every key-value-pair inside a dictionary on this case it is called unpacking
 
-def arg_demo(pos1, pos2, *args, **kwargs):
-  print(f'Positional params: {pos1}, {pos2}')
-  print('*args:')
-  for arg in args:
-    print(' ', arg)
-  print('**kwargs:')
+# def arg_demo(pos1, pos2, *args, **kwargs):
+#   print(f'Positional params: {pos1}, {pos2}')
+#   print('*args:')
+#   for arg in args:
+#     print(' ', arg)
+#   print('**kwargs:')
 
-# must be called like this, if not it will not recognize that you're calling both of the key-value-pairs
-  for keyword, value in kwargs.items():
-    print(f'  {keyword}: {value}')
+# # must be called like this, if not it will not recognize that you're calling both of the key-value-pairs
+#   for keyword, value in kwargs.items():
+#     print(f'  {keyword}: {value}')
 
-arg_demo('A', 'B', 1, 2, 3, color='purple', shape='circle')
+# arg_demo('A', 'B', 1, 2, 3, color='purple', shape='circle')
 
 
 
